@@ -1,0 +1,55 @@
+.works-preview {
+	background: white;
+	padding: 50px 0 40px;
+
+	&__wrapper {
+		padding: 40px 0 40px;
+		margin: 0;
+	}
+
+	&__item {
+		display: block;
+		width: 100%;
+		min-height: 20vh;
+		background: #000 no-repeat center / cover;
+
+		@include minSm {
+			min-height: 30vh;
+		}
+
+		@include minMd{
+			min-height: 50vh;
+		}
+
+		@media screen and (orientation:landscape) and (max-width: 900px) {
+			min-height: 80vh;
+		}
+
+
+		&--large {
+			height: 50vh;
+
+			@include minSm {
+				min-height: 60vh;
+			}
+
+			@include minMd {
+				min-height: 100vh;
+			}
+
+			@media screen and (orientation:landscape) and (max-width: 900px) {
+				min-height: 140vh;
+			}
+		}
+	}
+
+	&__show-more {
+		color: #616161;
+		text-decoration: none;
+		font-size: 1.6rem;
+
+		&:hover {
+			color: color(accent);
+		}
+	}
+}
