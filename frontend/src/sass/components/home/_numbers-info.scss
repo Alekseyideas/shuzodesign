@@ -1,0 +1,36 @@
+.numbers-info {
+	background: #282828;
+	padding: 100px 0 20px;
+
+	@include minLg {
+		padding: 100px 0;
+	}
+
+	&__num {
+		color: white;
+		font-size: 5rem;
+		font-weight: 600;
+		margin: 0;
+		line-height: 1em;
+
+		&::after {
+			content: '';
+			display: block;
+			margin: 15px auto;
+			width: 20px;
+			height: 2px;
+			background: rgba(219,219,219,0.30196078431372547);
+		}
+	}
+
+	&__text {
+		color: #f9f9f9;
+		font-weight: 300;
+		text-transform: uppercase;
+		margin: 0 0 80px;
+
+		@include minLg {
+			margin: 0;
+		}
+	}
+}
