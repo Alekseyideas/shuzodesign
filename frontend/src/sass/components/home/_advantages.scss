@@ -1,0 +1,151 @@
+.advantages {
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__wrapper {
+		background: #f9f9f9 no-repeat bottom left / cover;
+		margin: 0;
+		padding: 40px 15px 0;
+
+		@include minLg {
+			padding: 120px 15px 80px;
+		}
+
+		&--1,
+		&--2 {
+			display: flex;
+			align-items: flex-start;
+		}
+
+		&--1 {
+			@include bg_img('','bg-features.jpeg');
+			color: white;
+
+			@include minLg {
+				justify-content: flex-end;
+				padding-right: 40px;
+			}
+
+			@include minXl {
+				padding-right: 80px;
+			}
+		}
+
+		&--2 {
+			@include minLg {
+				justify-content: flex-start;
+				padding-left: 40px;
+			}
+
+			@include minXl {
+				padding-left: 80px;
+			}
+		}
+	}
+
+	&__container {
+		max-width: 530px;
+
+		@include maxLg {
+			margin: auto;
+		}
+	}
+
+	&__l-img {
+		height: 40px;
+
+		img {
+			height: 40px;
+			width: auto;
+		}
+	}
+
+	&__l-title {
+		font-size: 1.8rem;
+		margin: 20px 0 10px;
+		font-weight: 600;
+	}
+
+	&__l-info {
+		color: #f9f9f9;
+		font-weight: 300;
+		line-height: 2em;
+		margin: 0 0 40px;
+	}
+
+	&__r-title {
+		color: #222222;
+		font-size: 3.5rem;
+		line-height: 1.2em;
+		font-style: italic;
+		margin-top: 0;
+	}
+
+	&__r-info {
+		font-family: $fontAccent;
+		color: #a5a5a5;
+		font-style: italic;
+		font-size: 1.5rem;
+
+		&::after {
+			display: block;
+			content: '';
+			width: 59px;
+			height: 1px;
+			background: #5d6adf;
+			margin: 20px 0 40px;
+
+			@include minLg {
+				margin: 50px 0 80px;
+			}
+		}
+	}
+
+	&__progress-title-percent {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 7px;
+	}
+
+	&__progress-title {
+		text-transform: uppercase;
+		font-size: 1.3rem;
+		line-height: 1em;
+		margin: 0;
+	}
+
+	&__progress-percent {
+		font-size: 1.2rem;
+		color: #9b9b9b;
+		margin: 0;
+	}
+
+	&__progress-line {
+		width: 100%;
+		height: 6px;
+		background: #eeeeee;
+		position: relative;
+	}
+
+	&__progress-line-inner {
+		position: absolute;
+		width: 0;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: linear-gradient(90deg, #6558e0 0%, #26efd5 99%)
+	}
+
+	&__progress-info-wrapper {
+		margin-bottom: 30px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
