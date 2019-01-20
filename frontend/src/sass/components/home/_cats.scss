@@ -1,0 +1,31 @@
+.cats {
+	padding: 80px 0;
+	background: white;
+
+	.container {
+		max-width: 1250px;
+	}
+
+	&__img {
+
+		img {
+			width: auto;
+			height: 54px;
+		}
+	}
+
+	&__title {
+		margin: 10px 0;
+		font-size: 1.8rem;
+		line-height: 1.5em;
+		color: #282828;
+	}
+
+	&__info {
+		margin: 10px 0;
+		color: #a4adb3;
+		font-weight: 300;
+		font-size: 1.4rem;
+		line-height: 1.8em;
+	}
+}

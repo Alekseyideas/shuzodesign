@@ -1,0 +1,32 @@
+.section {
+
+	&__title {
+		font-size: 2.8rem;
+		color: color('primary');
+		margin-top: 0;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 59px;
+			height: 1px;
+			background: #5d6adf;
+			margin: 20px auto;
+		}
+	}
+
+	&__subTitle {
+		font-size: 1.8rem;
+		margin: 0;
+		font-weight: 300;
+		font-family: $fontAccent;
+		font-style: italic;
+		color: #616161;
+	}
+
+	&__info {
+		font-size: 1.5rem;
+		color: #a5a5a5;
+	}
+}
+

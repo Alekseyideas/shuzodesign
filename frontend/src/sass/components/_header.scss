@@ -1,0 +1,36 @@
+.header {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 40px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9;
+
+	&__logo {
+		width: 137px;
+		margin: 0;
+		line-height: 0;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__menu {
+		width: 16px;
+		height: 12px;
+		background: no-repeat center / cover;
+		border: 0;
+		@include bg_img('icons','menu-icon.svg');
+		cursor: pointer;
+		outline: 0;
+
+		&:hover {
+			opacity: .5;
+		}
+	}
+}

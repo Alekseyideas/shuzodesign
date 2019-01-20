@@ -9,9 +9,9 @@ $padding: 15px;
 // Colors
 //--------------------
 $colors: (
-	accent: #ff5500,
-	primary: #000,
-	blue: #2b73d5
+	accent: #47a9dd,
+	primary: #222222,
+	sec: #a4adb3
 );
 
 @function color($colorSelect) {
@@ -31,7 +31,8 @@ $md: 768px;
 $lg: 992px;
 $xl: 1200px;
 
-$font: $fontSize 'Open Sans', sans-serif;
+$font: $fontSize 'Poppins', sans-serif;
+$fontAccent: 'Crimson Text', sans-serif;
 
 $defPad: 20px 0;
 

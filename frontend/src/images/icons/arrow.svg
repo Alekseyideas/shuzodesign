@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 47" width="21" height="47">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #ffffff } 
+	</style>
+	<g id="Header">
+		<g id="Slider">
+			<g id="Arrows">
+				<g id="Right">
+					<path id="Arrow" class="shp0" d="M1.01,46.51l0.9,0.48l18.56,-23.35l-0.9,-0.48zM20.09,23.71l0.9,-0.48l-18.56,-23.22l-0.9,0.48zM0.01,46.51l0.9,0.48l18.56,-23.35l-0.9,-0.48zM19.09,23.71l0.9,-0.48l-18.56,-23.22l-0.9,0.48z" />
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>
