@@ -7,6 +7,8 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+const db = require('./util/database');
+
 app.set('view engine', 'pug');
 app.set('views', 'views');
 
@@ -20,6 +22,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/admin', adminRoutes, () => {
 	app.use(express.static(path.join(__dirname, 'views/admin/build')));
 });
+
+
+db.promise().execute('SELECT * FROM slides').then( resp => {
+	console.log(resp);
+}).catch( error => {
+	console.log(error);
+});
+
 app.use(blogRoutes);
 
 const port = +process.env.PORT;

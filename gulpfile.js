@@ -8,7 +8,7 @@ const gulp = require('gulp'),
 sass.compiler = require('node-sass');
 
 const stylesSrc = './public/styles/sass';
-const stylesDest = './public/styles/css';
+const stylesDest = './public/css';
 
 const sassTask = () => {
 	return gulp.src(`${stylesSrc}/**/*.scss`)
