@@ -1,5 +1,5 @@
 node_modules
 .idea
-.env
+#.env
 dist
 package-lock.json
